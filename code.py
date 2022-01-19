@@ -1,14 +1,10 @@
-def are_valid_groups(list_of_student_numbers, list_of_groups):
-    for lists in list_of_groups:
-        for members in lists:
-            if members in list_of_student_numbers:
-                list_of_student_numbers.remove(members)
-            else:
-                return False
-    if not list_of_student_numbers:
-        return True
-    else:
-        return False
-
-
-#print(are_valid_groups([1,2,3,4],[[1],[2],[3]]))
+def are_valid_groups(studentnumber, groups):
+    List = []
+    for x in groups:
+       for y in x:
+          if y in List:
+            return false
+          else:
+            List.append(y)
+    if studentnumber == List:
+      return true
